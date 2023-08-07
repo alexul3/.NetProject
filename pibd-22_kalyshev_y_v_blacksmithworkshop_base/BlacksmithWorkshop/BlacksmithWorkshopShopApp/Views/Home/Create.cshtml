@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Create";
+}
+<div class="text-center">
+    <h2 class="display-4">Создание магазина</h2>
+</div>
+<form method="post">
+    <div class="row">
+        <div class="col-4">Название магазина:</div>
+        <div class="col-8"><input type="text" name="shopName" id="shopName" /></div>
+    </div>
+    <div class="row">
+        <div class="col-4">Адрес:</div>
+        <div class="col-8"><input type="text" name="address" id="address" /></div>
+    </div>
+    <div class="row">
+        <div class="col-4">Дата открытия:</div>
+        <div class="col-8"><input type="date" id="dateOpening" name="dateOpening" /></div>
+    </div>
+    <div class="row">
+        <div class="col-4">Вместительность:</div>
+        <div class="col-8"><input type="number" id="capacity" name="capacity" /></div>
+    </div>
+    <div class="row">
+        <div class="col-8"></div>
+        <div class="col-4"><input type="submit" value="Создать" class="btn btn-primary" /></div>
+    </div>
+</form>

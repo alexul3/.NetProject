@@ -1,0 +1,71 @@
+﻿@using BlacksmithWorkshopContracts.ViewModels
+
+@model List<ShopViewModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Заказы</h1>
+</div>
+
+<div class="text-center">
+    @{
+        if (Model == null)
+        {
+            <h3 class="display-4">Авторизируйтесь</h3>
+            return;
+        }
+
+        <div>
+            <a asp-action="Create">Создать магазин</a>
+            <a asp-action="Update">Обновить магазин</a>
+            <a asp-action="Delete">Удалить магазин</a>
+            <a asp-action="AddManufacture">Добавить изделие</a>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Номер
+                    </th>
+                    <th>
+                        Название магазина
+                    </th>
+                    <th>
+                        Адрес
+                    </th>
+                    <th>
+                        Дата открытия
+                    </th>
+                    <th>
+                        Вместительность
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ShopName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Address)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DateOpening)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Capacity)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlacksmithWorkshopDataModels", "BlacksmithWorkshopDataModels\BlacksmithWorkshopDataModels.csproj", "{3D0FF8DF-07A2-45FA-A823-812674C3B094}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlacksmithWorkshopContracts", "BlacksmithWorkshopContracts\BlacksmithWorkshopContracts.csproj", "{9EA057E2-4895-45C1-B1E4-76748E34B4BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlacksmithWorkshopBusinessLogic", "BlacksmithWorkshopBusinessLogic\BlacksmithWorkshopBusinessLogic.csproj", "{7FB1CF71-6523-4F2C-8C9D-F5F965CBF543}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlacksmithWorkshopListImplement", "BlacksmithListImplement\BlacksmithWorkshopListImplement.csproj", "{DF0A453B-08F8-412D-9A12-15183A01F146}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlacksmithWorkshopView", "BlacksmithWorkshopView\BlacksmithWorkshopView.csproj", "{06FE12F5-A8F2-4FAE-A80A-ADD070E86EB9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlacksmithWorkshopFileImplement", "BlacksmithWorkshopFileImplement\BlacksmithWorkshopFileImplement.csproj", "{C6F64BD8-13F0-459D-AC7E-DFEDBE30C09A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlacksmithWorkshopDatabaseImplement", "BlacksmithWorkshopDatabaseImplement\BlacksmithWorkshopDatabaseImplement.csproj", "{99CF0DD1-5945-426C-9343-461A72204B74}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlacksmithWorkshopRestApi", "BlacksmithWorkshopRestApi\BlacksmithWorkshopRestApi.csproj", "{7F98BBDD-F3C7-44A8-85DF-153078D523D9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlacksmithWorkshopClientApp", "BlacksmithWorkshopClientApp\BlacksmithWorkshopClientApp.csproj", "{7C06FD73-C60D-44A6-8699-C3BA0CCCB95B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlacksmithWorkshopShopApp", "BlacksmithWorkshopShopApp\BlacksmithWorkshopShopApp.csproj", "{AB28AF85-782E-41C6-8D28-BB08154CEE2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D0FF8DF-07A2-45FA-A823-812674C3B094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D0FF8DF-07A2-45FA-A823-812674C3B094}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D0FF8DF-07A2-45FA-A823-812674C3B094}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0FF8DF-07A2-45FA-A823-812674C3B094}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EA057E2-4895-45C1-B1E4-76748E34B4BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA057E2-4895-45C1-B1E4-76748E34B4BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA057E2-4895-45C1-B1E4-76748E34B4BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA057E2-4895-45C1-B1E4-76748E34B4BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FB1CF71-6523-4F2C-8C9D-F5F965CBF543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FB1CF71-6523-4F2C-8C9D-F5F965CBF543}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FB1CF71-6523-4F2C-8C9D-F5F965CBF543}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FB1CF71-6523-4F2C-8C9D-F5F965CBF543}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF0A453B-08F8-412D-9A12-15183A01F146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF0A453B-08F8-412D-9A12-15183A01F146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF0A453B-08F8-412D-9A12-15183A01F146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF0A453B-08F8-412D-9A12-15183A01F146}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06FE12F5-A8F2-4FAE-A80A-ADD070E86EB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06FE12F5-A8F2-4FAE-A80A-ADD070E86EB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06FE12F5-A8F2-4FAE-A80A-ADD070E86EB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06FE12F5-A8F2-4FAE-A80A-ADD070E86EB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6F64BD8-13F0-459D-AC7E-DFEDBE30C09A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6F64BD8-13F0-459D-AC7E-DFEDBE30C09A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6F64BD8-13F0-459D-AC7E-DFEDBE30C09A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6F64BD8-13F0-459D-AC7E-DFEDBE30C09A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99CF0DD1-5945-426C-9343-461A72204B74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99CF0DD1-5945-426C-9343-461A72204B74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99CF0DD1-5945-426C-9343-461A72204B74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99CF0DD1-5945-426C-9343-461A72204B74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F98BBDD-F3C7-44A8-85DF-153078D523D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F98BBDD-F3C7-44A8-85DF-153078D523D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F98BBDD-F3C7-44A8-85DF-153078D523D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F98BBDD-F3C7-44A8-85DF-153078D523D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C06FD73-C60D-44A6-8699-C3BA0CCCB95B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C06FD73-C60D-44A6-8699-C3BA0CCCB95B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C06FD73-C60D-44A6-8699-C3BA0CCCB95B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C06FD73-C60D-44A6-8699-C3BA0CCCB95B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB28AF85-782E-41C6-8D28-BB08154CEE2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB28AF85-782E-41C6-8D28-BB08154CEE2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB28AF85-782E-41C6-8D28-BB08154CEE2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB28AF85-782E-41C6-8D28-BB08154CEE2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4353134-EE68-40B0-A40B-7FB28EE2F2B4}
+	EndGlobalSection
+EndGlobal

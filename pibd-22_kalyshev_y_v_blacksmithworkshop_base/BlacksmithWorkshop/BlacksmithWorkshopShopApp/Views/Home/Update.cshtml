@@ -1,0 +1,79 @@
+﻿@using BlacksmithWorkshopContracts.ViewModels
+
+@{
+    ViewData["Title"] = "Update";
+}
+<div class="text-center">
+    <h2 class="display-4">Изменение магазина</h2>
+</div>
+<form method="post">
+    <div class="row">
+        <div class="col-4">Магазин:</div>
+        <div class="col-8">
+            <select id="shop" name="shop" class="form-control" asp-items="@(new SelectList(@ViewBag.Shops, "Id", "ShopName"))"></select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">Название магазина:</div>
+        <div class="col-8"><input type="text" name="shopName" id="shopName" /></div>
+    </div>
+    <div class="row">
+        <div class="col-4">Адрес:</div>
+        <div class="col-8"><input type="text" name="address" id="address" /></div>
+    </div>
+    <div class="row">
+        <div class="col-4">Дата открытия:</div>
+        <div class="col-8"><input type="datetime-local" id="dateOpening" name="dateOpening" /></div>
+    </div>
+    <div class="row">
+        <div class="col-4">Вместительность:</div>
+        <div class="col-8"><input type="number" id="capacity" name="capacity" /></div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Название изделия
+                </th>
+                <th>
+                    Цена
+                </th>
+                <th>
+                    Количество
+                </th>
+            </tr>
+        </thead>
+        <tbody id="manufactures-table">
+        </tbody>
+    </table>
+    <div class="row">
+        <div class="col-8"></div>
+        <div class="col-4"><input type="submit" value="Изменить" class="btn btn-primary" /></div>
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+        function check() {
+            var shop = $('#shop').val();
+            if (shop) {
+                $.ajax({
+                    method: "GET",
+                    url: "/Home/GetShopWithManufactures",
+                    data: { shopId: shop },
+                    success: function (result) {
+                        if (result != null) {
+                            $('#shopName').val(result.item1.shopName);
+                            $('#address').val(result.item1.address);
+                            $('#dateOpening').val(result.item1.dateOpening);
+                            $('#capacity').val(result.item1.capacity);
+                            $('#manufactures-table').html(result.item2);
+                        }
+                    }
+                });
+            };
+        }
+        check();
+        $('#shop').on('change', (e) => check());
+    </script>
+}
